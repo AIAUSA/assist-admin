@@ -70,8 +70,11 @@ tfoot tr:last-child td {
 tr{
   background-color: orange;
 }
-td{
-  background-color: blue;
+table tr:nth-child(odd) {
+  background-color: grey;
+}
+table tr:nth-child(even) {
+  background-color:pink;
 }
 
 #active{

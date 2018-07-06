@@ -12,26 +12,7 @@
   grid-template-columns: auto auto auto auto auto;
   background-color: black;
 }
-#one,
-#two,
-#three,
-#four,
-#five,
-#six,
-#seven,
-#eight,
-#nine,
-#ten,
-#eleven,
-#twelve,
-#thirteen,
-#fourteen,
-#fifteen,
-#sixteen,
-#seventeen,
-#eighteen,
-#nineteen,
-#twenty {
+#grid-item {
   background-color: grey;
   border-radius: 5px;
   padding: 1px 1px; /* size of squares */

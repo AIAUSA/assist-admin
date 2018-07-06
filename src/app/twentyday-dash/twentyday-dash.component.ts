@@ -20,4 +20,15 @@ export class TwentydayDashComponent implements OnInit {
     this.userService.getUsers()
       .subscribe(users => this.users = users.slice(1, 5));
   }
+
+  getColor(id) {
+  switch (id) {
+    case 1:
+      return 'green';
+    case 2:
+      return 'blue';
+    case 3:
+      return 'red';
+  }
+}
 }

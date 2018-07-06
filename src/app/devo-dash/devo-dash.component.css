@@ -1,0 +1,11 @@
+a{
+  width: 20%;
+}
+.cards{
+
+  margin-top: 10px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+
+}

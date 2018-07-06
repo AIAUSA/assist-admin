@@ -7,28 +7,9 @@
   </ul>
 
   <div id="grid-container">
-    <div id="one" >1</div>
-    <div id="two">2</div>
-    <div id="three">3</div>
-    <div id="four">4</div>
-    <div id="five">5</div>
-    <div id="six">6</div>
-    <div id="seven">7</div>
-    <div id="eight">8</div>
-    <div id="nine">9</div>
-    <div id="ten">10</div>
-    <div id="eleven">11</div>
-    <div id="twelve">12</div>
-    <div id="thirteen">13</div>
-    <div id="fourteen">14</div>
-    <div id="fifteen">15</div>
-    <div id="sixteen">16</div>
-    <div id="seventeen">17</div>
-    <div id="eighteen">18</div>
-    <div id="nineteen">19</div>
-    <div id="twenty">20</div>
+    <div id="grid-item" [ngStyle]="{'background-color':getColor(number)}" *ngFor="let number of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">{{number}}</div>
   </div>
 
-  <a> Total: {{user.total}} </a>
+  <a > Total: {{user.total}} </a>
 
 </div>
