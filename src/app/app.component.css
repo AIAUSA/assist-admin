@@ -186,17 +186,12 @@ textarea {
 
 
 
-html{
-  color: #blue;
-}
-
-/* ------------- header styles aia -------------------- */
-
-header{
-  display: inline-block;
-  padding-bottom: 1em;
-  background-color: yellow;
-  width: 100%;
+#head{
+  display: block;
+  background-color: #991B1E;
+  text-align: left;
+  color: white;
+  padding: 1em;
 }
 
 #menuToggle{
