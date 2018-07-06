@@ -1,11 +1,55 @@
-a{
-  width: 20%;
-}
 .cards{
-
+  color: white;
   margin-top: 10px;
-  background-color: red;
+  position: relative;
+  overflow: hidden;
+  margin-left: 28%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
 
+.square1{
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+    width: 50%;
+    height: 40%;
+    border-radius: .5em;
+    padding: 10px;
+    box-shadow: 5px 7px #888888;
+}
+
+.square2{
+  background-color: green;
+  height: 40%;
+  bottom: 0;
+  position: absolute;
+  width: 50%;
+  border-radius: .5em;
+  padding: 10px;
+  box-shadow: 5px 7px #888888;
+  cursor: pointer;
+}
+
+.square1 div,
+.square2 div{
+   display: table;
+   width: 100%;
+   height: 100%;
+
+}
+.square1 span,
+.square2 span
+ {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cards:before{
+    content: "";
+    padding-top: 100%;
 }
