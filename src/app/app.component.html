@@ -14,24 +14,3 @@
 <body id="page">
   <router-outlet></router-outlet>
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-
-$.noConflict();
-
-// jQuery 3.x-style ready event and locally scoped $
-jQuery(function($) {
-  $('html').removeClass('nojs');
-  $('html').addClass('hasjs');
-  $('#menuToggle').on('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  console.log('hello');
-
-  $('html').toggleClass('has-toolbar');
-  });
-  //end of navigation menu
-
-})
-</script>
