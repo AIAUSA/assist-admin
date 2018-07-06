@@ -182,28 +182,54 @@ textarea {
 }
 
 /* end normalize.css form styles */
+ 
+/* my styles */
 
+body {
+  font-family: "helvetica neue", "Arial";
+  background-color: #EAEAEA;
+  color: #4A4A4A;
+}
+.navigation {
+  background-color: #991B1E;
+  color: #D1D1D1;
+}
 
+section {
+  width: 90%;
+  margin-left: auto; 
+  margin-right: auto;
+}
 
+h2 {
+  font-size: 1.6em;
+  margin: 1em 0em .5em;
+}
 
-html{
-  color: #blue;
+/* 542 */
+@media screen and (min-width: 27.375em) {
+  section {
+    width: 80%;
+  }
+
+  #active{
+   display: table-cell;
+ }
+
 }
 
 /* ------------- header styles aia -------------------- */
 
 header{
-  display: inline-block;
-  padding-bottom: 1em;
-  background-color: yellow;
-  width: 100%;
+  display: none;
 }
 
 #head{
   display: block;
-  background-color: red;
-  text-align: center;
-color: white;
+  background-color: #991B1E;
+  text-align: left;
+  color: white;
+  padding: 1em;
 }
 
 #menuToggle{
