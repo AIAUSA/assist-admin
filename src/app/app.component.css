@@ -191,104 +191,102 @@ textarea {
   background-color: #991B1E;
   text-align: left;
   color: white;
-  padding: 1em;
+  padding: 1.35em;
 }
 
 #menuToggle{
-  right: 0;
-  position: absolute;
-  float: right;
+  display: none;
 }
 
-#aialogo{
-  float: left;
+nav {
+   width: 100%;
+   text-align: center;
+ }
+
+nav a {
+	display: block;
+	padding: 15px 0;
+	border-bottom: 1px solid #C3AA6E;
+	color: #F0EADC;
+}
+nav a:hover {
+   background: red; color: #FFF;
+}
+nav li:last-child a {
+  border-bottom: none;
 }
 
+/*-----------------------------------------*/
 
+.menu {
+	width: 240px;
+	height: 100%;
+	position: absolute;
+  background-color: #991B1E;
+  color: #D1D1D1;
+	left: -240px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+
+}
 .menu-icon {
 	padding: 10px 20px;
+	background: #E5DAC0;
+	color: #987D3E;
 	cursor: pointer;
 	float: right;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-  background-size: contain;
-
+	margin: 6px 6px 0 0;
+	border-radius: 5px;
 }
-/* ------------------------------------------------------------------ */
-
-
-/*
-.hasjs .navigation{
-  margin-left: -50%;
-}
-*/
-
-#menuToggle{
+#menuToggle {
   display: none;
 }
 
-
-.has-toolbar #navigation {
-  padding-left: 1.2em;
-  margin-left: 0%;
-  transition: 0.5s;
-  width: 100%;
-}
-
-
-
-/* ----------------------  navigation styles ----------------- */
-.hasjs #navigation {
-  top: 0;
-  left: 0;
-  background: #000;
+#menuToggle:checked ~ .menu {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.95;
-  display: none;
-}
-
-.navigation li,
-.navigation li:last-child {
-  border-bottom: 0.02em solid #fff;
-  list-style-type: none;
-}
-
-
-.navigation li a {
-  transition: 0.3s;
-  display: block;
-  text-decoration: none;
-  padding: 1.29em; /* check this number */
-  color: #fff;
-  text-align: center;
-  font-family: Lucida Bright;
-  font-weight: bold;
+  left: 0;
 }
 
 
 
-
-/* -------------------------- 650px ---------------------------*/
+/* --------------------- 650px ----------------------*/
 @media screen and (min-width: 40.625em) {
-  #navigation {
-    width: 100%;
-    height: 12%;
-   /* margin-left: -50%; */
-  /* display: none; */
+  body{
+    margin-top: 11%;
+  }
+  #head{
+    display: none;
+  }
+  .menu-icon {
+    display:none;
   }
 
+  nav a{
+    border-bottom: none;
+  }
 
-  .navigation li,
-  .navigation li:last-child {
+  .menu{
+    left: 0;
+    display: inline-block;
+    top:0;
+    width: 100%;
+    height: 0;
+    left:0;
+  }
+
+  .menu li,
+  .menu li:last-child {
     display: inline-block;
     padding: 0;
     border-style: none;
   }
 
 
-  .navigation li a {
-  /*   display: block; */
+  .menu li a {
+   display: block;
     display: inline-block;
     text-decoration: none;
     padding: 1.29em;
@@ -296,6 +294,9 @@ textarea {
     text-align: center;
     font-family: Lucida Bright;
     font-weight: bold;
+    background-color: #991B1E;
+    color: #D1D1D1;
+
   }
 
 
