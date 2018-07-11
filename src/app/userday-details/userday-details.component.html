@@ -1,15 +1,17 @@
-<div *ngIf="user">
-  <a id ="back" (click)="goBack()">< Back to all Users</a>
+<section>
+<a id ="back" (click)="goBack()">< back to all users</a>  <!-- need to get icon for arrow -->
+<div class="card" *ngIf="user">
   <h2>{{ user.name }}</h2>
   <ul>
-    <li> {{ user.email }}</li>
-    <li> {{ user.active }}</li>
+    <li class="text"> {{ user.email }}</li>
+    <li class="text"> {{ user.active }}</li>
   </ul>
 
   <div id="grid-container">
     <div id="grid-item" [ngStyle]="{'background-color':getColor(number)}" *ngFor="let number of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">{{number}}</div>
   </div>
 
-  <a > Total: {{user.total}} </a>
+  <span class="text"> Total: {{user.total}} </span>
 
 </div>
+</section>

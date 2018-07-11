@@ -187,19 +187,25 @@ textarea {
 
 body {
   font-family: "helvetica neue", "Arial";
-  background-color: #EAEAEA;
+  background-color: #F5F4F4;
   color: #4A4A4A;
+  padding-top: 3.5em;
 }
 
 section {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 2em;
 }
 
 h2 {
-  font-size: 1.6em;
-  margin: 1em 0em .5em;
+  font-size: 1.7em;
+  padding: .5em 0em .25em;
+}
+
+.text {
+  padding: .25em 0em;
 }
 
 /* 542 */

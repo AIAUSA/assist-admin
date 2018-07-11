@@ -1,19 +1,23 @@
 #back {
-  background-color: grey;
-  border-radius: 0.5em;
-  font-size: 1.3em; /* triall size */
+  color: #4a4a4a;
+  font-size: 1.1em; /* triall size */
   cursor: pointer;
+}
 
+.card {
+  background-color: white;
+  border-radius: .25em;
+  margin: 1em 0em;
+  padding: 1em 1.5em;
 }
 /* ------------------------------ day grid -------------------------- */
 #grid-container {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: auto auto auto auto auto;
-  background-color: black;
 }
 #grid-item {
-  background-color: grey;
+  background-color: #F0F0F0;
   border-radius: 5px;
   padding: 1px 1px; /* size of squares */
   font-size: 30px;

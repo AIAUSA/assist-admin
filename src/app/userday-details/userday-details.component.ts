@@ -136,7 +136,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 1;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -146,7 +146,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 2;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -156,7 +156,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 3;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -166,7 +166,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 4;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -176,7 +176,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 5;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -186,7 +186,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 6;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -196,7 +196,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 7;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -206,7 +206,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 8;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -216,7 +216,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 9;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -228,7 +228,7 @@ export class UserdayDetailsComponent implements OnInit {
                 console.log('result is '+ result);
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -238,7 +238,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 11;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -248,7 +248,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 12;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -258,7 +258,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 13;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -268,7 +268,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 14;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -278,7 +278,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 15;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -288,7 +288,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 16;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -298,7 +298,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 17;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -308,7 +308,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 18;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -318,7 +318,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 19;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;
@@ -328,7 +328,7 @@ export class UserdayDetailsComponent implements OnInit {
                 result += 20;
                 if(day === result){
                   result=0;
-                  return 'red';
+                  return '#991B1E';
                 }
                 else{
                   result=0;

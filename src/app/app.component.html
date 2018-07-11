@@ -1,16 +1,15 @@
 <input type="checkbox" id="menuToggle">
 <label for="menuToggle" class="menu-icon">&#9776;</label>
 
-<nav class="menu">
-	<ul>
-    	<li><a routerLink="/dashboard">Admin</a></li>
-        <li><a routerLink="/dashboard">Home</a></li>
-        <li><a routerLink="/twentyday">20 Day Challenge</a></li>
-        <li><a routerLink="/devodash">Daily Devos</a></li>
-    </ul>
-</nav>
+<div class="flex-nav">
+    <div routerLink="/dashboard" routerLinkActive="active-nav">Admin</div>
+    <div routerLink="/dashboard" routerLinkActive="active-nav">Home</div>
+    <div routerLink="/twentyday" routerLinkActive="active-nav">20 Day Challenge</div>
+    <div routerLink="/devodash" routerLinkActive="active-nav">Daily Devos</div>
+    <div class="welcome">welcome,<br>NAME</div>
+    <div class="logout">logout</div>
+</div>
+
 <div id="head">20 Day Challenge</div>
 
-<body id="page">
-  <router-outlet></router-outlet>
-</body>
+<router-outlet></router-outlet>

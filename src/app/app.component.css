@@ -185,7 +185,9 @@ textarea {
 
 
 
+/* raiven styles */
 
+/*
 #head{
   display: block;
   background-color: #991B1E;
@@ -201,6 +203,7 @@ textarea {
 nav {
    width: 100%;
    text-align: center;
+   display: block;
  }
 
 nav a {
@@ -215,9 +218,9 @@ nav a:hover {
 nav li:last-child a {
   border-bottom: none;
 }
-
+*/
 /*-----------------------------------------*/
-
+/*
 .menu {
 	width: 240px;
 	height: 100%;
@@ -249,10 +252,11 @@ nav li:last-child a {
   position: absolute;
   left: 0;
 }
-
+*/
 
 
 /* --------------------- 650px ----------------------*/
+/*
 @media screen and (min-width: 40.625em) {
   body{
     margin-top: 11%;
@@ -290,7 +294,6 @@ nav li:last-child a {
     display: inline-block;
     text-decoration: none;
     padding: 1.29em;
-    color: #fff;
     text-align: center;
     font-family: Lucida Bright;
     font-weight: bold;
@@ -298,6 +301,96 @@ nav li:last-child a {
     color: #D1D1D1;
 
   }
+}
+*/
 
+/* caitlin styles */
+/* 
+nav {
+  overflow: auto;
+  background-color: #991B1E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1.5em;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+}
+nav ul li a {
+  display: block;
+  color: #D1D1D1;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+.logout {
+  display: block;
+  float: right;
+  color: white;
+  background-color: black;
+  padding: .5em 1em;
+  margin: auto;
+} */
+
+.flex-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 3.5em;
+  width: 100%;
+  background-color: #991B1E;
+  color: #D1D1D1;
+  position: fixed;
+  top: 0;
+}
+.flex-nav div {
+  display: flex;
+  align-items: center;
+  padding: 0em .7em;
+  font-size: 1.5em;
+  transition: color .1s;
+}
+.flex-nav div:hover {
+  cursor: pointer;
+  color: white;
+  transition: color .2s;
+}
+.flex-nav div:focus {
+  outline: none;
+}
+.active-nav {
+  color: white;
+  border-top: .2em solid #991B1E;
+  border-bottom: .2em solid white;
+}
+.welcome {
+  margin-left: auto!important;
+  font-size: 1em!important;
+  text-align: right;
+  color: white;
+}
+.logout {
+  background-color: black;
+  color: white;
+  margin: .4em;
+  font-size: 1.1em!important;
+  border-radius: 2em;
+}
+
+/* 542 */
+@media screen and (min-width: 27.375em) {
+/*   #head {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    float: left;
+  }
+  nav ul li a  {
+    text-align: center;
+    padding: .5em 1em;
+  } */
 
 }
