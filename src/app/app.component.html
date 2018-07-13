@@ -1,8 +1,5 @@
-<input type="checkbox" id="menuToggle">
-<label for="menuToggle" class="menu-icon">&#9776;</label>
-
 <div class="flex-nav">
-    <div routerLink="/dashboard" routerLinkActive="active-nav">Admin</div>
+    <div routerLink="/dashboard">Admin</div>
     <div routerLink="/dashboard" routerLinkActive="active-nav">Home</div>
     <div routerLink="/twentyday" routerLinkActive="active-nav">20 Day Challenge</div>
     <div routerLink="/devodash" routerLinkActive="active-nav">Daily Devos</div>
@@ -10,6 +7,9 @@
     <div class="logout">logout</div>
 </div>
 
-<div id="head">20 Day Challenge</div>
-
+<div class="small-nav">
+    <span>20 Day Challenge</span>
+    <i class="material-icons md-36" (click)="toggleNav()">menu</i>
+</div>
+ 
 <router-outlet></router-outlet>

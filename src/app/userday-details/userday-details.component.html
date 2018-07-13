@@ -1,14 +1,15 @@
 <section>
-<a id ="back" (click)="goBack()">< back to all users</a>  <!-- need to get icon for arrow -->
+<a id ="back" (click)="goBack()"><i class="material-icons">chevron_left</i> back to all users</a>  <!-- need to get icon for arrow -->
 <div class="card" *ngIf="user">
   <h2>{{ user.name }}</h2>
   <ul>
-    <li class="text"> {{ user.email }}</li>
-    <li class="text"> {{ user.active }}</li>
+    <li class="text">email: {{ user.email }}</li>
+    <li class="text">joined: {{ user.active }}</li> <!-- add created date property -->
+    <li class="text">last active: {{ user.active }}</li>
   </ul>
 
-  <div id="grid-container">
-    <div id="grid-item" [ngStyle]="{'background-color':getColor(number)}" *ngFor="let number of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">{{number}}</div>
+  <div class="flex-container">
+    <div class="flex-item" [ngClass]="getClass(number)" *ngFor="let number of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">{{number}}</div>
   </div>
 
   <span class="text"> Total: {{user.total}} </span>

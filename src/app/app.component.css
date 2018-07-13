@@ -1,361 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* stylelint-disable */
-/* Keep reset CSS to one minified line */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
-
-/* base styles */
-
-/* minor third scale */
-
-/* http://www.modularscale.com/?17&px&1.125 */
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* end normalize.css form styles */
-
-
-
-/* raiven styles */
-
-/*
-#head{
-  display: block;
-  background-color: #991B1E;
-  text-align: left;
-  color: white;
-  padding: 1.35em;
-}
-
-#menuToggle{
-  display: none;
-}
-
-nav {
-   width: 100%;
-   text-align: center;
-   display: block;
- }
-
-nav a {
-	display: block;
-	padding: 15px 0;
-	border-bottom: 1px solid #C3AA6E;
-	color: #F0EADC;
-}
-nav a:hover {
-   background: red; color: #FFF;
-}
-nav li:last-child a {
-  border-bottom: none;
-}
-*/
-/*-----------------------------------------*/
-/*
-.menu {
-	width: 240px;
-	height: 100%;
-	position: absolute;
-  background-color: #991B1E;
-  color: #D1D1D1;
-	left: -240px;
-	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-
-}
-.menu-icon {
-	padding: 10px 20px;
-	background: #E5DAC0;
-	color: #987D3E;
-	cursor: pointer;
-	float: right;
-	margin: 6px 6px 0 0;
-	border-radius: 5px;
-}
-#menuToggle {
-  display: none;
-}
-
-#menuToggle:checked ~ .menu {
-  position: absolute;
-  left: 0;
-}
-*/
-
-
-/* --------------------- 650px ----------------------*/
-/*
-@media screen and (min-width: 40.625em) {
-  body{
-    margin-top: 11%;
-  }
-  #head{
-    display: none;
-  }
-  .menu-icon {
-    display:none;
-  }
-
-  nav a{
-    border-bottom: none;
-  }
-
-  .menu{
-    left: 0;
-    display: inline-block;
-    top:0;
-    width: 100%;
-    height: 0;
-    left:0;
-  }
-
-  .menu li,
-  .menu li:last-child {
-    display: inline-block;
-    padding: 0;
-    border-style: none;
-  }
-
-
-  .menu li a {
-   display: block;
-    display: inline-block;
-    text-decoration: none;
-    padding: 1.29em;
-    text-align: center;
-    font-family: Lucida Bright;
-    font-weight: bold;
-    background-color: #991B1E;
-    color: #D1D1D1;
-
-  }
-}
-*/
 
 /* caitlin styles */
-/* 
-nav {
-  overflow: auto;
-  background-color: #991B1E;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-size: 1.5em;
-}
-nav ul {
-  width: 100%;
-  height: 100%;
-}
-nav ul li a {
-  display: block;
-  color: #D1D1D1;
-  text-decoration: none;
-  padding: .5em 1em;
-}
-.logout {
-  display: block;
-  float: right;
-  color: white;
-  background-color: black;
-  padding: .5em 1em;
-  margin: auto;
-} */
 
 .flex-nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  min-height: 3.5em;
-  width: 100%;
-  background-color: #991B1E;
-  color: #D1D1D1;
-  position: fixed;
-  top: 0;
+  display: none;
 }
 .flex-nav div {
   display: flex;
   align-items: center;
-  padding: 0em .7em;
+  padding: 0em .8em;
   font-size: 1.5em;
   transition: color .1s;
 }
 .flex-nav div:hover {
   cursor: pointer;
   color: white;
-  transition: color .2s;
+  transition: color .1s;
 }
 .flex-nav div:focus {
   outline: none;
@@ -370,17 +29,42 @@ nav ul li a {
   font-size: 1em!important;
   text-align: right;
   color: white;
+  cursor: default;
 }
 .logout {
   background-color: black;
   color: white;
-  margin: .4em;
+  margin: .6em;
+  padding: 0em 1em;
   font-size: 1.1em!important;
   border-radius: 2em;
 }
 
+.small-nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 3.5em;
+  width: 100%;
+  background-color: #991B1E;
+  color: white;
+}
+.small-nav > span {
+  padding: 0em 1em;
+  font-size: 1.5em;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+  margin-left: auto;
+  padding: 0em .5em;
+  cursor: pointer;
+}
+
 /* 542 */
-@media screen and (min-width: 27.375em) {
+@media screen and (min-width: 55em) {
 /*   #head {
     display: none;
   }
@@ -393,4 +77,19 @@ nav ul li a {
     padding: .5em 1em;
   } */
 
+  .flex-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 3.5em;
+    width: 100%;
+    background-color: #991B1E;
+    color: #D1D1D1;
+    position: fixed;
+    top: 0;
+  }
+  .small-nav {
+    display: none;
+  }
 }
