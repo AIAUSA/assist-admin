@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
-  toggleNav(): void {
-    //document.getElementById("").toggleClass("");
+  showNav(): void {
+    document.getElementById("mainNav").style.display = "flex";
+  }
+  hideNav(): void {
+    if (window.innerWidth < 880) document.getElementById("mainNav").style.display = "none";
   }
 }

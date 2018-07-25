@@ -3,43 +3,62 @@
 
 .flex-nav {
   display: none;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  background-color: #991B1E;
+  color: #D1D1D1;
+  position: fixed;
+  top: 0;
+  overflow: scroll;
+  z-index: 99;
 }
-.flex-nav div {
+.flex-nav > div {
   display: flex;
-  align-items: center;
-  padding: 0em .8em;
-  font-size: 1.5em;
+  justify-content: flex-end;
+  align-items: right;
+  text-align: right;
+  min-height: 1.5em;
+  padding: .3rem 2.3rem;
+  font-size: 1.6rem;
   transition: color .1s;
-}
-.flex-nav div:hover {
   cursor: pointer;
+}
+.flex-nav > div:hover {
   color: white;
   transition: color .1s;
 }
-.flex-nav div:focus {
+.flex-nav > div:focus {
   outline: none;
 }
 .active-nav {
   color: white;
-  border-top: .2em solid #991B1E;
-  border-bottom: .2em solid white;
+  border-right: .2em solid white;
+  border-top: 0;
+  border-bottom: 0;
+  padding-right: 1.3em!important;
+}
+.hidemenu {
+  margin: .25em 0em;
 }
 .welcome {
-  margin-left: auto!important;
-  font-size: 1em!important;
+  margin-top: auto!important;
+  margin-left: 0!important;
+  font-size: 1.1rem!important;
   text-align: right;
   color: white;
-  cursor: default;
+  cursor: default!important;
 }
 .logout {
   background-color: black;
   color: white;
-  margin: .6em;
-  padding: 0em 1em;
-  font-size: 1.1em!important;
-  border-radius: 2em;
+  max-width: 3rem!important;
+  margin: 0 0 .5rem 0;
+  padding: .5rem 1rem;
+  font-size: 1.1rem!important;
+  border-radius: 2rem;
 }
-
 .small-nav {
   position: fixed;
   top: 0;
@@ -47,16 +66,17 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  min-height: 3.5em;
+  min-height: 3.5rem;
   width: 100%;
   background-color: #991B1E;
   color: white;
 }
 .small-nav > span {
-  padding: 0em 1em;
+  padding: 0rem 1rem;
   font-size: 1.5em;
 }
 .material-icons.md-36 {
+  color: white;
   font-size: 36px;
   margin-left: auto;
   padding: 0em .5em;
@@ -64,32 +84,60 @@
 }
 
 /* 542 */
-@media screen and (min-width: 55em) {
-/*   #head {
-    display: none;
-  }
-  nav ul li {
-    display: block;
-    float: left;
-  }
-  nav ul li a  {
-    text-align: center;
-    padding: .5em 1em;
-  } */
+@media screen and (min-width: 55rem) {
 
   .flex-nav {
-    display: flex;
+    display: flex!important;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: stretch;
-    min-height: 3.5em;
+    min-height: 3.5rem;
+    max-height: 3.5rem;
     width: 100%;
     background-color: #991B1E;
     color: #D1D1D1;
     position: fixed;
     top: 0;
   }
-  .small-nav {
+  .flex-nav > div {
+    display: flex;
+    align-items: center;
+    min-height: 1.5rem;
+    padding: 0em .8rem;
+    font-size: 1.5rem;
+    transition: color .1s;
+  }
+  .flex-nav > div:hover {
+    cursor: pointer;
+    color: white;
+    transition: color .1s;
+  }
+  .flex-nav > div:focus {
+    outline: none;
+  }
+  .active-nav {
+    color: white;
+    border-top: .2rem solid #991B1E;
+    border-bottom: .2rem solid white;
+    border-right: 0;
+    padding: 0em .8rem!important;
+  }
+  .welcome {
+    margin-left: auto!important;
+    margin-top: 0!important;
+    text-align: right;
+    cursor: default!important;
+  }
+  .logout {
+    background-color: black;
+    color: white;
+    max-width: 3rem!important;
+    margin: .3rem;
+    padding: .5rem 1rem;
+    font-size: 1.1rem!important;
+    border-radius: 2rem;
+  }
+  .small-nav, .hidemenu {
     display: none;
   }
 }

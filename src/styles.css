@@ -183,7 +183,7 @@ textarea {
 
 /* end normalize.css form styles */
 
-/* my styles */
+/* caitlin styles */
 
 body {
   font-family: "helvetica neue", "Arial";
@@ -196,11 +196,12 @@ section {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2em;
+  padding-top: 2rem;
+  overflow: scroll;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   padding: .5em 0em .25em;
 }
 

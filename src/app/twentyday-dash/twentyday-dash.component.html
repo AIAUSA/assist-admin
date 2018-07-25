@@ -8,7 +8,7 @@
       <th id="active">Last Active</th>
     </tr>
     <tr *ngFor="let user of users"
-      routerLink="/userdetail/{{user.id}}">
+      routerLink="/twentyday/userdetail/{{user.id}}">
       <td class="badge">{{user.name}}</td>
       <td> <progress max="20" value="{{user.progress}}"></progress></td>
       <td id="active">{{user.active}}</td>

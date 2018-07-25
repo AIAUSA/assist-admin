@@ -9,9 +9,9 @@ import { DevoDashComponent }      from './devo-dash/devo-dash.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'dashboard', component: DevoDashComponent },
-  { path: 'twentyday', component: TwentydayDashComponent },
-  { path: 'userdetail/:id', component: UserdayDetailsComponent }
+  { path: 'dashboard', component: DevoDashComponent, data: {title: "Admin Home"} },
+  { path: 'twentyday', component: TwentydayDashComponent, data: {title: "20 Day Challenge"}  },
+  { path: 'twentyday/userdetail/:id', component: UserdayDetailsComponent, data: {title: "20 Day Challenge"}  }
 
 ];
 

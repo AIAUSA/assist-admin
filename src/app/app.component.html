@@ -1,15 +1,16 @@
-<div class="flex-nav">
+<div class="flex-nav" id="mainNav" (click)="hideNav()">
+    <i class="hidemenu material-icons md-36" (click)="hideNav()">close</i>
     <div routerLink="/dashboard">Admin</div>
     <div routerLink="/dashboard" routerLinkActive="active-nav">Home</div>
     <div routerLink="/twentyday" routerLinkActive="active-nav">20 Day Challenge</div>
     <div routerLink="/devodash" routerLinkActive="active-nav">Daily Devos</div>
-    <div class="welcome">welcome,<br>NAME</div>
-    <div class="logout">logout</div>
+    <div class="welcome">welcome,<br>NAME</div> <!-- fill in from database in all caps -->
+    <div><div class="logout">logout</div></div>
 </div>
 
 <div class="small-nav">
     <span>20 Day Challenge</span>
-    <i class="material-icons md-36" (click)="toggleNav()">menu</i>
+    <i class="material-icons md-36" (click)="showNav()">menu</i>
 </div>
  
 <router-outlet></router-outlet>
