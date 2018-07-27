@@ -10,7 +10,7 @@
     <tr *ngFor="let user of users"
       routerLink="/twentyday/userdetail/{{user.id}}">
       <td class="badge">{{user.name}}</td>
-      <td> <progress max="20" value="{{user.progress}}"></progress></td>
+      <td> <progress max="20" value="{{user.total}}"></progress></td>
       <td id="active">{{user.active}}</td>
     </tr>
   </table>
